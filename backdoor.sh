@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DIR="/home/cure51/server/uploads"
-ARCHIVE="/tmp/$date.tar.gz"
+ARCHIVE="/tmp/$(date +%Y%m%d_%H%M%S).tar.gz"
 
 tar -czf $ARCHIVE -C $DIR .
 
